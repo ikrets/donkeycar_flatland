@@ -1,0 +1,20 @@
+<launch>
+  <include file="$(find turtlebot_flatland)/launch/turtlebot_track0.launch"></include>
+  <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping">
+    <param name="base_frame" value="/base" />
+    <param name="linearUpdate" value="1" />
+    <param name="angularUpdate" value="0.5" />
+    <param name="temporalUpdate" value="1" />
+    <param name="particles" value="30" />
+    <param name="delta" value="0.1" />
+    <param name="maxRange" value="2.5" />
+    <param name="occ_thresh" value="0.025" />
+    <param name="srr" value="0.001" />
+    <param name="srt" value="0.001" />
+    <param name="str" value="0.001" />
+    <param name="srt" value="0.001" />
+    <param name="map_update_interval" value="0.5" />
+    <param name="resampleThreshold" value="0.5" />
+    <param name="minimumScore" value="0" />
+  </node>
+</launch>

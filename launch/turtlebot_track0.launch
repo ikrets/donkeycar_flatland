@@ -13,8 +13,8 @@
   <arg name="base_frame_id" default="base"/>
   <arg name="global_frame_id" default="map"/>
   <!-- Name of the map to use (without path nor extension) and initial position -->
-  <arg name="initial_pose_x" default="3.0"/>
-  <arg name="initial_pose_y" default="7.0"/>
+  <arg name="initial_pose_x" default="2.8"/>
+  <arg name="initial_pose_y" default="5.6"/>
   <arg name="initial_pose_a" default="0.0"/>
   <arg name="min_obstacle_height" default="0.0"/>
   <arg name="max_obstacle_height" default="5.0"/>
@@ -25,7 +25,7 @@
   You can override these default values:
     roslaunch flatland_Server server.launch world_path:="/some/world.yaml" initial_rate:="30.0"
   -->
-  <arg name="world_path"   default="$(find turtlebot_flatland)/maps/hospital_section.world.yaml"/>
+  <arg name="world_path"   default="$(find turtlebot_flatland)/maps/track0.world.yaml"/>
   <arg name="update_rate" default="100.0"/>
   <arg name="step_size" default="0.01"/>
   <arg name="viz_pub_rate" default="30.0"/>

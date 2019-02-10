@@ -7,10 +7,3 @@ layers:  # Support for arbitrary number of layers
   - name: "3d"
     map: "hospital_section.yaml"  # leading / denotes absolute file path, otherwise relative
     color: [0, 1, 0, 0]  # List of floats [r,g,b,a] to color debug boundary
-models:  
-  - name: table0
-    pose: [6,12,0]
-    model: table.model.yaml
-  - name: door0
-    pose: [5.15, 10.0, 0]
-    model: door.model.yaml
